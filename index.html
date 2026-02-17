@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Integrador 1</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #a78bfa, #60a5fa);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    header .university {
+      display: inline-block;
+      font-size: 0.85rem;
+      padding: 4px 14px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #c4b5fd;
+      letter-spacing: 0.5px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(12px);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      color: #a78bfa;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card h2 .icon {
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      color: #c9c9d6;
+      font-size: 0.95rem;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.04);
+      margin-bottom: 8px;
+      transition: background 0.2s;
+    }
+
+    .card ul li:hover {
+      background: rgba(167, 139, 250, 0.15);
+    }
+
+    .card ul li:last-child {
+      margin-bottom: 0;
+    }
+
+    .card ul li a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card ul li a::after {
+      content: "\2192";
+      opacity: 0;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .card ul li:hover a::after {
+      opacity: 1;
+      transform: translateX(4px);
+    }
+
+    .card ul li a:hover {
+      color: #bfdbfe;
+    }
+
+    .role-tag {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 8px;
+      background: rgba(167, 139, 250, 0.2);
+      color: #c4b5fd;
+      font-weight: 400;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      color: #6b7280;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Proyecto Integrador 1</h1>
+      <span class="university">Universidad del Valle &mdash; Sede Tulu&aacute;</span>
+    </header>
+
+    <section class="card">
+      <h2><span class="icon">&#128218;</span> Descripci&oacute;n</h2>
+      <p>
+        P&aacute;gina informativa del curso Proyecto Integrador 1.
+        Aqu&iacute; encontrar&aacute;s la lista del profesor y los estudiantes
+        que participan en el proyecto. Haz clic en cualquier nombre para ver
+        su perfil.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="icon">&#128104;&#8205;&#127891;</span> Profesor</h2>
+      <ul>
+        <li>
+          <a href="profesor.html">
+            H&eacute;ctor Fabio Ocampo <span class="role-tag">Profesor</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2><span class="icon">&#127891;</span> Estudiantes</h2>
+      <ul>
+        <li>
+          <a href="estudiante.html">
+            Juan P&eacute;rez <span class="role-tag">Estudiante</span>
+          </a>
+        </li>
+        <li>
+          <a href="fabio.html">
+            Fabio <span class="role-tag">Estudiante</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2026 Proyecto Integrador 1 &bull; Univalle Tulu&aacute;
+    </footer>
+  </div>
+</body>
+</html>
